@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace ConsoleApplication2
+{
+    class Add
+    {
+        
+        static void Main(string[] args)
+        {
+            int s1 = Convert.ToInt32(Console.ReadLine());
+            int s2 = Convert.ToInt32(Console.ReadLine());
+            int s3 = Convert.ToInt32(Console.ReadLine());
+            if((s1 > s2 && s1 < s3)||(s1<s2 && s1>s3))
+                Console.WriteLine(s1);
+            else if((s2 > s1 && s2 < s3) || (s2<s1 && s2>s3))
+                Console.WriteLine(s2);
+            else
+                Console.WriteLine(s3);
+        }
+         
+           
+    }
+}
