@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace ConsoleApplication2
+{
+    class Add
+    {
+        static long Fact()
+        {
+            long  s1 = Convert.ToInt64(Console.ReadLine());
+            long s3 = 1;
+            for (int i = 1; i <= s1; i++)
+            {
+                s3 *= i;
+            }
+            return s3;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Fact());
+        }
+    }
+}
