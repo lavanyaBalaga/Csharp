@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace ConsoleApplication2
+{
+    class Add
+    {
+        static int Fact(int n)
+        {
+            int s3 = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                s3 *= i;
+            }
+            return s3;
+        }
+        static void Main(string[] args)
+        {
+            int s1 = Convert.ToInt32(Console.ReadLine());
+            int rem;
+            int s=0;
+            int temp=s1;
+            Console.WriteLine(s1);
+            while (temp>0)
+            {
+                rem = temp % 10;
+                s = s + Fact(rem);
+                temp = temp / 10;
+            }
+            Console.WriteLine(s);
+            if (s == s1)
+                Console.WriteLine("strong number");
+         
+            else  
+                Console.WriteLine(" not a strong number");
+        }
+    }
+}
