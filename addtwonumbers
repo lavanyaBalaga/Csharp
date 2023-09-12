@@ -1,0 +1,19 @@
+using System.Text;
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome");
+            Console.WriteLine("enter name");
+            int s1 = Convert.ToInt32(Console.ReadLine());
+            int s2 = Convert.ToInt32(Console.ReadLine());
+            int s3 = s1 + s2;
+            Console.WriteLine("name:" + s3);
+            Console.WriteLine("name:{0}", s1+s2);
+            Console.ReadKey();
+        }
+    }
+}
